@@ -1,12 +1,12 @@
-with customers as (
-    select * from {{ref('stg_customers')}}
-),
+-- with customers as (
+--     select * from {{ref('stg_customers')}}
+-- ),
 
-orders as (
+with orders as (
     select * from {{ref('stg_orders')}}
 ),
 
-payment as (
+payments as (
     select * from {{ref('stg_payments')}}
 ),
 
