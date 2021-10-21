@@ -2,7 +2,7 @@ version: 2
 
 sources:
  - name: stripe
-   loaded_at_field: _etl_loaded_at
+   loaded_at_field: _BATCHED_AT
    freshness:
      warn_after: {count: 12, period: hour} # Warn me if nothing has been loaded in more than 12 hours
      error_after: {count: 24, period: hour}
